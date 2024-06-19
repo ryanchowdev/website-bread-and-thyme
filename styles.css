@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #D4A373;
-}
-
 body {
+    box-sizing: border-box;
+    color: #d4a373;
     background-color: #faedcd;
 }
 
