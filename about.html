@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>About Us</title>
-</head>
-<body>
-    <header>
-        <div class="desktop-nav-container aboreto-regular">
-            <nav class="desktop-nav">
-                <a href="index.html" class="desktop-nav-items">Home</a>
-                <a href="about.html" class="desktop-nav-items">About</a>
-                <a href="services.html" class="desktop-nav-items">Services</a>
-                <a href="contact.html" class="desktop-nav-items">Contact</a>
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="about figtree-regular">
+        <!-- Navbar -->
+        <header>
+            <div class="desktop-nav-container aboreto-regular">
+                <nav class="desktop-nav">
+                    <a href="index.html" class="desktop-nav-items">Home</a>
+                    <a href="about.html" class="desktop-nav-items">About</a>
+                    <a href="services.html" class="desktop-nav-items">Services</a>
+                    <a href="contact.html" class="desktop-nav-items">Contact</a>
+                </nav>
+            </div>
+            <div class="mobile-nav-container aboreto-regular">
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+                <nav class="mobile-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- Hero section -->
+        <div class="container" id="hero">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1 class="aboreto-bold">Bread & Thyme</h1>
+                    <button class="aboreto-bold">Read More</button>
+                </div>
+            </div>
         </div>
-        <div class="mobile-nav-container aboreto-regular">
-            <button class="hamburger">
-                <div class="bar"></div>
-            </button>
-            <nav class="mobile-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+        <!-- Info about founders -->
+        <div class="container" id="founders">
+            <div class="grid-container">
+                <!-- Emily Foster -->
+                <div class="grid-item">
+                    <img src="images/emily-foster.jpg" alt="Emily Foster"/>
+                    <p>Emily Foster ...</p>
+                </div>
+                <!-- Jacob Meyers -->
+                <div class="grid-item">
+                    <p>Jacob Meyers ...</p>
+                    <img src="images/jacob-meyers.jpg" alt="Jacob Meyers"/>
+                </div>
+            </div>
         </div>
-    </header>
-</body>
+        <!-- Brief history -->
+        <div class="container" id="history">
+            <h2>Our History</h2>
+            <p>Text one two three</p>
+        </div>
+        <!-- Image -->
+        <!-- Button -->
+    </body>
 </html>
