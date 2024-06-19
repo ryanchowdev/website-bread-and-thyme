@@ -1,3 +1,8 @@
+body {
+    background-color: #faedcd;
+    color: #d4a373;
+}
+
 .container {
     width: 100%;
     margin-left: auto;
@@ -51,13 +56,19 @@
 /* 2xl */
 @media (min-width: 1536px) {
     .container {
-        max-width: 1536px;
+        max-width: 3840px;
     }
 }
 
 .aboreto-regular {
     font-family: "Aboreto", system-ui;
     font-weight: 400;
+    font-style: normal;
+}
+
+.aboreto-bold {
+    font-family: "Aboreto", system-ui;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -75,13 +86,15 @@
     font-style: normal;
 }
 
-/* Hero image */
-.hero-image {
-    /* Darken the background so it's easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
+/* Hero image - about */
+.about .hero-image {
+    /* Adjust height and width */
+    height: 100vh;
+    width: 100%;
 
-    /* Adjust height */
-    height: 50%;
+    /* Darken the background so it's easier to read */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/making-bread-1.jpg"); */
+    background-image: url("images/making-bread-1.jpg");
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -97,5 +110,40 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    /* color: white; */
+}
+
+/* Enlarge the h1 text */
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    /* color: black; */
+    color: #d4a373;
+    background-color: #fefae0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #faedcd;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+#founders img {
+    width: 50%;
 }
