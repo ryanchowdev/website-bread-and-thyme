@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #D4A373;
+}
+
 body {
     background-color: #faedcd;
-    color: #d4a373;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
     width: 100%;
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -15,6 +29,12 @@ body {
 @media (min-width: 320px) {
     .container {
         max-width: 320px;
+    }
+    .mobile-nav-container {
+        display: block;
+    }
+    .desktop-nav-container {
+        display: none;
     }
 }
 
@@ -44,6 +64,16 @@ body {
     .container {
         max-width: 1024px;
     }
+    .mobile-nav-container {
+        display: none;
+    }
+    .desktop-nav-container {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    
 }
 
 /* xl */
@@ -146,80 +176,6 @@ body {
 
 #founders img {
     width: 50%;
-}@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #D4A373;
-    background-color: #faedcd;
-}
-
-/* mobile S */
-@media (min-width: 320px) {
-    .container {
-        max-width: 320px;
-    }
-    .mobile-nav-container {
-        display: block;
-    }
-    .desktop-nav-container {
-        display: none;
-    }
-}
-
-/* xs */
-@media (min-width: 475px) {
-    .container {
-        max-width: 475px;
-    }
-}
-
-/* sm */
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
-}
-
-/* md */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-/* lg */
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-    .mobile-nav-container {
-        display: none;
-    }
-    .desktop-nav-container {
-        display: block;
-    }
-}
-
-@media (max-width: 1024px) {
-    
-}
-
-/* xl */
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-
-/* 2xl */
-@media (min-width: 1536px) {
-    .container {
-        max-width: 3840px;
-    }
 }
 
 .aboreto-regular {
@@ -240,15 +196,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-}
-
-.container {
-    width: 100%;
-    min-height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 .desktop-nav-container {
