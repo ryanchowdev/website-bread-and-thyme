@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     box-sizing: border-box;
     color: #d4a373;
@@ -13,7 +17,6 @@ body {
 
 .container {
     width: 100%;
-    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -158,31 +161,88 @@ body {
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    /* color: black; */
     color: #d4a373;
     background-color: #fefae0;
     text-align: center;
     cursor: pointer;
+    border: 1px solid #d4a373;
+    border-radius: 12px;
 }
 
 .hero-text button:hover {
     background-color: #faedcd;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
+/* Founders */
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.grid-item {
-    text-align: center;
+#founders {
+    padding-top: 50px;
 }
 
 #founders img {
-    width: 50%;
+    /* width: 50%; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    max-width: 50%;
+    padding: 0px 100px; 
 }
 
+#founders p {
+    padding: 0px 100px;
+}
+
+#emily {
+    text-align: left;
+}
+
+#jacob {
+    text-align: right;
+}
+
+/* History */
+.about #history {
+    text-align: center;
+    max-width: 75%;
+}
+
+/* Gallery */
+.about #gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+#gallery button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #d4a373;
+    background-color: #fefae0;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #d4a373;
+    border-radius: 12px;
+}
+
+#gallery button:hover {
+    background-color: #faedcd;
+}
+
+#gallery img {
+    max-width: 15%;
+    padding: 20px;
+}
+
+.container #gallery-button {
+    padding: 20px;
+}
+
+/* Desktop container */
 .desktop-nav-container {
     width: 100%;
     margin-left: auto;
@@ -210,6 +270,7 @@ body {
     transition: color 0.25s;
 }
 
+/* Mobile container */
 .mobile-nav-container {
     width: 100%;
     margin-left: auto;

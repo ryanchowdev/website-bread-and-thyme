@@ -10,7 +10,9 @@
     <body class="about figtree-regular">
         <!-- Navbar -->
         <header>
+            <!-- Place hero image behind the navbar -->
             <div class="hero-image">
+                <!-- Desktop menu -->
                 <div class="desktop-nav-container aboreto-regular">
                     <nav class="desktop-nav">
                         <a href="index.html" class="desktop-nav-items">Home</a>
@@ -19,6 +21,7 @@
                         <a href="contact.html" class="desktop-nav-items">Contact</a>
                     </nav>
                 </div>
+                <!-- Mobile hamburger menu -->
                 <div class="mobile-nav-container aboreto-regular">
                     <button class="hamburger">
                         <div class="bar"></div>
@@ -33,34 +36,77 @@
             </div>
         </header>
         <!-- Hero section -->
-        <div class="hero-image-container" id="hero">
-                <div class="hero-text">
-                    <h1 class="aboreto-bold">Bread & Thyme</h1>
-                    <button class="aboreto-bold">Read More</button>
-                </div>
-            </div>
+        <div class="container hero-text" id="hero">
+            <h1 class="aboreto-bold">Bread & Thyme</h1>
+            <button class="aboreto-bold" onclick="location.href='#founders';">Read More</button>
         </div>
         <!-- Info about founders -->
         <div class="container" id="founders">
-            <div class="grid-container">
-                <!-- Emily Foster -->
-                <div class="grid-item">
+            <!-- Emily Foster -->
+            <div class="flexbox" id="emily">
+                <div class="image">
                     <img src="images/emily-foster.jpg" alt="Emily Foster"/>
-                    <p>Emily Foster ...</p>
                 </div>
-                <!-- Jacob Meyers -->
-                <div class="grid-item">
-                    <p>Jacob Meyers ...</p>
+                <div class="text">
+                    <p>
+                        Emily had always been enchanted by her grandmother's stories of old-world baking. 
+                        As a child, she would spend hours in the kitchen, kneading dough and listening to 
+                        tales of artisanal bread, crafted with love and care.
+                    </p>
+                </div>
+            </div>
+            <!-- Jacob Meyers -->
+            <div class="flexbox" id="jacob">
+                <div class="text">
+                    <p>
+                        Jacob, on the other hand, had traveled extensively, collecting recipes and
+                        techniques from different cultures. He was fascinated by the use of herbs and spices, 
+                        particularly thyme, which he believed added a unique depth to any dish.
+                    </p>
+                </div>
+                <div class="image">
                     <img src="images/jacob-meyers.jpg" alt="Jacob Meyers"/>
                 </div>
             </div>
         </div>
         <!-- Brief history -->
         <div class="container" id="history">
-            <h2>Our History</h2>
-            <p>Text one two three</p>
+            <h2>Bread & Thyme: A Culinary Journey in San Diego</h2>
+            <p>
+                In the vibrant city of San Diego, known for its picturesque coastline and bustling food scene, 
+                there emerged a bakery that quickly became the heart of the community. 
+                "Bread & Thyme" wasn't just a bakery; it was a dream realized by Emily Foster and her childhood 
+                friend, Jacob Meyers. The duo shared a passion for baking and a vision to create a place where 
+                people could gather, enjoy delicious food, and feel at home.
+            </p>
+            <h3>The Vision</h3>
+            <p>
+                Bread & Thyme was more than just a business venture; it was a place where tradition met innovation.
+                The bakery's philosophy was simple: use the finest ingredients, bake with love, and create a warm,
+                welcoming atmosphere for everyone who walked through the door. The centerpiece of their offerings 
+                was the sourdough bread, baked fresh every morning. Emily's grandmother's recipe, with a touch of 
+                Jacob's secret blend of herbs, quickly became a local favorite. Alongside the bread, they offered 
+                a variety of pastries, each with a unique twist, reflecting Jacob's culinary adventures.
+            </p>
+            <h3>Community and Sustainability</h3>
+            <p>
+                From the outset, Bread & Thyme committed to sustainability and supporting local farmers. They sourced 
+                their flour from a nearby organic farm and used seasonal produce for their fillings and toppings. 
+                This not only ensured the freshness of their products but also strengthened their bond with the community.
+            </p>
         </div>
-        <!-- Image -->
-        <!-- Button -->
+        <!-- Gallery -->
+        <div class="container" id="gallery">
+            <!-- Images -->
+            <div class="container" id="gallery-images">
+                <img src="images/making-bread-2.jpg"/>
+                <img src="images/bread-6.jpg"/>
+                <img src="images/bread-7.jpg"/>
+            </div>
+            <!-- Button back to Home page -->
+            <div class="container" id="gallery-button">
+                <button class="aboreto-bold" onclick="location.href='index.html';">Back to Home</button>
+            </div>
+        </div>
     </body>
 </html>
