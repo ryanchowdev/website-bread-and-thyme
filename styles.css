@@ -431,3 +431,7 @@ body {
     background-color: #ad865e;
     transition: 0.4s;
 }
+
+.git-fix {
+    color: white;
+}
