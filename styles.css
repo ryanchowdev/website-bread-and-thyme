@@ -80,7 +80,6 @@ body {
         max-width: 1280px;
     }
 }
-
 /* 2xl */
 @media (min-width: 1536px) {
     .container {
@@ -265,8 +264,8 @@ body {
 /* Desktop container */
 .desktop-nav-container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* padding-left: 0.5rem;
     padding-right: 0.5rem; */
 }
@@ -274,12 +273,13 @@ body {
 .desktop-nav {
     display: block;
     padding-top: 35px;
+    padding-right: 30px;
     float: right;
 }
 
 .desktop-nav-items {
     text-decoration: none;
-    padding: 0px 25px;
+    padding-left: 25px;
     font-size: 20px;
     font-weight: 700;
     color: #D4A373;
@@ -511,4 +511,54 @@ body {
 .contact-container form .contact-btn:hover {
     background-color: #ad865e;
     transition: 0.4s;
+}
+
+.index {
+    margin: 0;
+    padding: 0;
+}
+
+.index .hero-image {
+
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("images/bread-8.jpg");
+    /* background-image: url("images/bread-8.jpg"); */
+
+    /* Position and center image to scale on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.index-background-sum {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.background-sum-title {
+    font-size: 45px;
+}
+
+.background-sum {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.background-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.index-images {
+    max-width: 15%;
+    height: auto;
+    padding: 25px;
+    border-radius: 35px;
 }
