@@ -295,8 +295,6 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 .hamburger {
@@ -311,6 +309,7 @@ body {
     background: none;
     outline: none;
     border: none;
+    overflow: hidden;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -421,7 +420,7 @@ body {
     opacity: 75%;    
 }
 
-/* Footer For All Pages
+/* Footer For All Pages */
 .desktop-footer-container {
     background-color: #fefae0 ;
     display: flex;
@@ -442,14 +441,16 @@ body {
 
 .desktop-footer-info {
     align-items: center;
+    padding: 25px 0px;
 }
 
-.footer-info-items li {
+.footer-info-items {
     list-style-type: none;
     text-align: center;
     font-size: 20px;
     margin: auto;
-} */
+    padding: 5px;
+}
 
 /* Contact Page */
 .contact-container {
@@ -523,7 +524,7 @@ body {
     height: 100vh;
     width: 100%;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("images/bread-8.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #faedcd), url("images/bread-8.jpg");
     /* background-image: url("images/bread-8.jpg"); */
 
     /* Position and center image to scale on all screens */
@@ -534,12 +535,13 @@ body {
 }
 
 .index-background-sum {
-    padding-top: 25px;
+    padding-top: 90px;
     text-align: center;
 }
 
 .background-sum-title {
     font-size: 45px;
+    padding-bottom: 55px;
 }
 
 .background-sum {
@@ -547,13 +549,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
+    line-height: 1.5;
 }
 
-.background-images {
+.index-gallery-images {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    padding-top: 55px;
 }
 
 .index-images {
@@ -562,3 +566,37 @@ body {
     padding: 25px;
     border-radius: 35px;
 }
+
+.footer-bg-container {
+    padding-top: 90px;
+    height: 50vh;
+    width: 100%;
+
+    background-image: linear-gradient(#faedcd,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #fefae0), url("images/making-bread-4.jpg");
+    /* background-image: url("images/bread-8.jpg"); */
+
+    /* Position and center image to scale on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.footer-text button{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: 0;
+    display: inline-block;
+    color: #d4a373;
+    background-color: #fefae0;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #d4a373;
+    border-radius: 12px;
+    padding: 25px;
+    font-size: 20px;
+}
+
