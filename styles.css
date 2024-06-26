@@ -206,7 +206,7 @@ body {
     clear: both;
 }
 
-/* Responsive layout - columns will stack on top of each other for mobile */
+/* Responsive layout founders - columns will stack on top of each other for mobile */
 @media screen and (max-width: 768px) {
     .column-2 {
         width: 100%;
@@ -214,15 +214,20 @@ body {
     .column-3 {
         width: 100%;
     }
-    #founders .row {
+    /* Emily - normal column order */
+    #founders #emily {
         display: flex;
         flex-direction: column;
     }
-    /* NOT WORKING CURRENTLY - Reverse direction for Jacob so that image appears first */
-    /* #jacob .row {
+    /* Jacob - reverse column order so picture will appear first */
+    #founders #jacob {
         display: flex;
         flex-direction: column-reverse;
-    } */
+    }
+    /* Increase width of images for mobile as well */
+    #founders img {
+        max-width: 100%;
+    }
 }
 
 /* History */
@@ -241,13 +246,14 @@ body {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 20px 25px;
     color: #d4a373;
     background-color: #fefae0;
     text-align: center;
     cursor: pointer;
     border: 1px solid #d4a373;
     border-radius: 12px;
+    font-size: 20px;
 }
 
 #gallery button:hover {
@@ -258,7 +264,18 @@ body {
     max-width: 50%;
     padding: 20px;
     box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0,0%,0%,0.25);
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+}
+
+#gallery-button {
+    padding-top: 20px;
+}
+
+/* Responsive layout gallery */
+@media screen and (max-width: 768px) {
+    #gallery img {
+        max-width: 75%;
+    }
 }
 
 /* Desktop container */
