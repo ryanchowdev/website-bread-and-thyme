@@ -130,8 +130,8 @@ body {
 
 
     /* Darken the background so it's easier to read */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/making-bread-1.jpg"); */
-    background-image: url("images/making-bread-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), #faedcd), url("images/making-bread-1.jpg");
+    /* background-image: url("images/making-bread-1.jpg"); */
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -179,6 +179,21 @@ body {
 #founders * {
     box-sizing: border-box;
     text-align: center;
+}
+
+#founders h1 {
+    font-size: 45px;
+}
+
+#founders h2, #history h2 {
+    font-size: 30px;
+}
+
+#founders p, #history p {
+    max-width: 75%;
+    line-height: 150%;
+    margin: auto;
+    font-size: 18px;
 }
 
 #founders img {
@@ -270,6 +285,18 @@ body {
 
 #gallery-button {
     padding-top: 20px;
+}
+
+#gallery #img-1 {
+    text-align: right;
+}
+
+#gallery #img-2 {
+    text-align: center;
+}
+
+#gallery #img-3 {
+    text-align: left;
 }
 
 /* Responsive layout gallery */
@@ -504,17 +531,37 @@ body {
 }
 
 /* Contact Page */
-.contact-container {
-    position: absolute;
-    width: 500px;
-    left: 25%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+/* work in progress */
+.contact * {
+    box-sizing: border-box;
 }
+
+.contact {
+    padding: 0;
+    margin: 0;
+}
+
+/* .contact-container {
+    width: 500px;
+} */
 
 .contact-container h1 {
     font-size: 50px;
     text-align: center;
+}
+
+/* work in progress */
+.contact .column-2 {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.contact .row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .contact-container form {
@@ -542,13 +589,35 @@ body {
     color:#D4A373;
 }
 
+/* Hero image - contact */
+.contact .hero-image {
+    /* Adjust height and width */
+    height: 100vh;
+    width: 100%;
+
+
+    /* Darken the background so it's easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), #faedcd), url("images/bread-1.jpg");
+    /* background-image: url("images/making-bread-1.jpg"); */
+
+    /* Position and center image to scale on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-container form {
+    text-align: center;
+}
+
 .contact-container form .textarea-field {
     height: 150px;
     padding-top: 10px;
 }
 
 .contact-container form .contact-btn {
-    width: 50%;
+    width: 50%; /* 100% */
     height: 50px;
     border-radius: 5px;
     margin-top: 18px;
@@ -565,6 +634,7 @@ body {
     transition: 0.4s;
 }
 
+/* Home page */
 .index {
     margin: 0;
     padding: 0;
