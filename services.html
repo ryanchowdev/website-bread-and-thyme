@@ -7,42 +7,52 @@
     <link rel="stylesheet" href="styles.css">
     <title>Services</title>
 </head>
-<body>
-    <header>
-        <div class="desktop-nav-container aboreto-regular">
-            <nav class="desktop-nav">
-                <a href="index.html" class="desktop-nav-items">Home</a>
-                <a href="about.html" class="desktop-nav-items">About</a>
-                <a href="services.html" class="desktop-nav-items">Services</a>
-                <a href="contact.html" class="desktop-nav-items">Contact</a>
-            </nav>
-        </div>
-        <div class="mobile-nav-container aboreto-regular">
-            <button class="hamburger">
-                <div class="bar"></div>
-            </button>
-            <nav class="mobile-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+<body class="services">
+    <div class="hero-image">
+        <header>
+            <div class="desktop-nav-container aboreto-regular">
+                <nav class="desktop-nav">
+                    <a href="index.html" class="desktop-nav-items">Home</a>
+                    <a href="about.html" class="desktop-nav-items">About</a>
+                    <a href="services.html" class="desktop-nav-items">Services</a>
+                    <a href="contact.html" class="desktop-nav-items">Contact</a>
+                </nav>
+            </div>
+            <div class="mobile-nav-container aboreto-regular">
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+                <nav class="mobile-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
         </div>
     </header>
-    <!-- Insert Hero Here -->
-     <section class="slider-container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide-1" src="images/bread-1.jpg" alt="Image of Bread">
-                <img id="slide-2" src="images/bread-2.jpg" alt="Image of Crossaints">
-                <img id="slide-3" src="images//bread-5.jpg" alt="Enlarged Image of Bread">
+    <div class="hero=background-container hero-text" id="hero">
+        <h1 class="aboreto-bold">Our Services</h1>
+        <button class="aboreto-bold" onclick="location.href='#showcase';">Learn More</button>
+    </div>
+    <div class="services-showcase" id="showcase">
+        <div class="showcase-info-container">
+            <div class="showcase-1">
+                <img src="images/bread-4.jpg" alt="bread" class="showcase-img">
             </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider-holder">
+                        <img id="slide-1" src="images/bread-7.jpg" alt="Image of Bread">
+                        <img id="slide-2" src="images/making-bread-2.jpg" alt="Image of Crossaints">
+                        <img id="slide-3" src="images//bread-3.jpg" alt="Enlarged Image of Bread">
+                    </div>
+                </div>
             </div>
-        </div>
-     </section>
+            <div class="showcase-2">
+                <img src="images/bread-6.jpg" alt="Big Bread" class="showcase-img">
+            </div>
+        </div> 
+    </div>
 </body>
 </html>
