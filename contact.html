@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Contact Us</title>
-</head>
-<body>
-    <header>
-        <div class="desktop-nav-container aboreto-regular">
-            <nav class="desktop-nav">
-                <a href="index.html" class="desktop-nav-items">Home</a>
-                <a href="about.html" class="desktop-nav-items">About</a>
-                <a href="services.html" class="desktop-nav-items">Services</a>
-                <a href="contact.html" class="desktop-nav-items">Contact</a>
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Contact Us</title>
+    </head>
+    <body class="contact">
+        <header>
+            <div class="hero-image">
+                <div class="desktop-nav-container aboreto-regular">
+                    <nav class="desktop-nav">
+                        <a href="index.html" class="desktop-nav-items">Home</a>
+                        <a href="about.html" class="desktop-nav-items">About</a>
+                        <a href="services.html" class="desktop-nav-items">Services</a>
+                        <a href="contact.html" class="desktop-nav-items">Contact</a>
+                    </nav>
+                </div>
+                <div class="mobile-nav-container aboreto-regular">
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Hero section -->
+        <div class="container hero-text" id="hero">
+            <h1 class="aboreto-bold">Bread & Thyme</h1>
+            <button class="aboreto-bold" onclick="location.href='#contact-area';">Contact Us</button>
         </div>
-        <div class="mobile-nav-container aboreto-regular">
-            <button class="hamburger">
-                <div class="bar"></div>
-            </button>
-            <nav class="mobile-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+        <!-- Contact form -->
+        <div class="container contact-container aboreto-bold" id="contact-area">
+            <h1 class="aboreto-bold">Contact Us</h1>
+            <div class="row">
+                <div class="column-2">
+                    <h1 class="contact-title">Get In Touch</h1>
+                    <form>
+                        <input type="text" class="input-field "id="fullName" placeholder="Your Name">
+                        <input type="email" class="input-field " id="email" placeholder="Your Email">
+                        <input type="text" class="input-field "id="mobile" placeholder="Your Phone Number">
+                        <textarea class="input-field textarea-field"placeholder="Your Message"></textarea>
+                        <button type="button" class="contact-btn">Submit Message</button>
+                    </form>
+                </div>
+                <div class="column-2">
+                    <h1>images here</h1>
+                </div>
+            </div>
         </div>
-    </header>
-    <!-- Insert Hero Elements -->
-     <div class="contact-container aboreto-bold">
-        <h1 class="contact-title">Get In Touch</h1>
-        <form>
-            <input type="text" class="input-field "id="fullName" placeholder="Your Name">
-            <input type="email" class="input-field " id="email" placeholder="Your Email">
-            <input type="text" class="input-field "id="mobile" placeholder="Your Phone Number">
-            <textarea class="input-field textarea-field"placeholder="Your Message"></textarea>
-            <button type="button" class="contact-btn">Submit Message</button>
-        </form>
-     </div>
-</body>
+        <!-- Image here -->
+        <div class="contact-image-bottom">
+            <h1>another image here</h1>
+        </div>
+        <!-- Footer goes here -->
+    </body>
 </html>
