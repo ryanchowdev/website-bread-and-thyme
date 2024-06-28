@@ -241,6 +241,14 @@ body {
     #gallery img {
         max-width: 75%;
     }
+    /* Realign to center */
+    #gallery #img-1 {
+        text-align: center;
+    }
+    /* Realign to center */
+    #gallery #img-3 {
+        text-align: center;
+    }
 }
 
 /* Desktop container */
@@ -527,8 +535,6 @@ body {
 }
 
 /* Contact Page */
-
-/* work in progress */
 .contact * {
     box-sizing: border-box;
 }
@@ -538,7 +544,7 @@ body {
     margin: 0;
 }
 
-/* need to fix layout on windows */
+/* TODO ? need to fix layout on windows */
 /* .contact-container {
     width: 100%;
 } */
@@ -553,7 +559,6 @@ body {
     text-align: center;
 }
 
-/* work in progress */
 .contact .column-2 {
     float: left;
     width: 50%;
@@ -567,7 +572,7 @@ body {
 }
 
 .contact-container form {
-    margin: 100px;
+    margin: 50px;
     border-radius: 50px;
 }
 
@@ -581,7 +586,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border: 2px solid #D4A373;
-    border-radius: 5px;
+    border-radius: 40px;
     outline: none;
     background-color: #faedcd;
     color:#D4A373;
@@ -658,7 +663,7 @@ body {
     height: 80px;
     border: none;
     outline: none;
-    background: #2f2f2f;
+    background: #ccd5ae; /* #2f2f2f; */
     color: #fff;
     font-size: 22px;
     border-radius: 40px;
@@ -695,7 +700,7 @@ body {
 }
 
 .contact-button-container .active{
-    background: #ff2b75;
+    background: #8fa253; /* #ff2b75; */
     transition: 1s;
 }
 
@@ -716,8 +721,45 @@ body {
     transition-delay: 1s;
 }
 
+/* Contact slideshow */
+/* 
+    TODO can remove later if not broken, keep for now 
+    same as services slideshow
+*/
+.contact .slider-wrapper {
+    width: 24rem;
+    position: relative;
+    max-width: 24rem;
+    overflow: hidden;
+}
+
+.contact .slider-holder {
+    display: flex;
+    aspect-ratio: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+}
+
+.contact .slider-holder img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    filter: brightness(90%);
+    width: 25px;
+    height: auto;
+    max-width: 100%;
+    animation: slider 30s ease-in-out infinite normal;
+}
+
 /* Contact form responsiveness */
 @media screen and (max-width: 768px) {
+    /* Reduce form margin on mobile for readability */
+    .contact-container form {
+        margin: 10px;
+    }
     /* Don't show slideshow on mobile */
     .contact-container #slideshow {
         display: none;
@@ -726,6 +768,38 @@ body {
     .contact-container .column-2 {
         width: 100%;
     }
+}
+
+/* Thanks page */
+.thanks {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero image - thanks */
+.thanks .hero-image {
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #faedcd), url("images/bread-10.jpg");
+
+    /* Position and center image to scale on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Adjust subtext to improve readability */
+.thanks .hero-text h2 {
+    color: #fefae0;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px #0f0f0f;
+}
+
+/* Increase margin around button */
+.thanks button {
+    margin: 25px;
 }
 
 /* Home page */
