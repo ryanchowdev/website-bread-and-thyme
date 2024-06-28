@@ -42,17 +42,16 @@
             <h1 class="aboreto-bold">Contact Us</h1>
             <div class="row">
                 <div class="column-2">
-                    <h2 class="contact-title">Get In Touch</h1>
+                    <h2 class="contact-title">Get In Touch</h2>
                     <form>
                         <input type="text" class="input-field "id="fullName" placeholder="Your Name">
                         <input type="email" class="input-field " id="email" placeholder="Your Email">
                         <input type="text" class="input-field "id="mobile" placeholder="Your Phone Number">
                         <textarea class="input-field textarea-field"placeholder="Your Message"></textarea>
-                        <!-- <button type="button" class="contact-btn">Submit Message</button> -->
-                        <!-- New button -->
+                        <!-- Animated button -->
                         <div class="contact-button-container">
-                            <button id="btn">
-                                <p id="btnText">Submit</p>
+                            <button id="contact-btn">
+                                <p id="contact-btnText">Submit</p>
                                 <div class="check-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                                         <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
@@ -60,21 +59,21 @@
                                 </div>
                             </button>
                         </div>
-                        <!-- TODO move to app.js -->
-                        <!-- <script type="text/javascript">
-                            const btn = document.querySelector("#btn");
-                            const btnText = document.querySelector("#btnText");
-                    
-                            btn.onclick = () => {
-                                btnText.innerHTML = "Thanks";
-                                btn.classList.add("active");
-                            };
-                        </script> -->
                     </form>
                 </div>
-                <!-- Do not display slideshow on mobile -->
+                <!-- Slideshow - not displayed on mobile -->
                 <div class="column-2" id="slideshow">
-                    <h2>images here</h1>
+                    <div class="showcase-info-container">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <div class="slider-holder">
+                                    <img id="slide-1" src="images/bread-7.jpg" alt="Image of Bread">
+                                    <img id="slide-2" src="images/making-bread-2.jpg" alt="Image of Crossaints">
+                                    <img id="slide-3" src="images//bread-3.jpg" alt="Enlarged Image of Bread">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
