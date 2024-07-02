@@ -586,7 +586,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border: 2px solid #D4A373;
-    border-radius: 40px;
+    border-radius: 25px;
     outline: none;
     background-color: #faedcd;
     color:#D4A373;
@@ -948,6 +948,9 @@ body {
 }
 
 @media (max-width: 320px) {
+    .background-sum {
+        width: 95%;
+    }
 }
 
 @media (min-width: 375px) {
@@ -977,6 +980,12 @@ body {
     .showcase-1 {
         overflow-x: hidden;
     }
+    .background-sum-title {
+        width: 99%;
+    }
+    .background-sum {
+        width: 90%;
+    }
 }
 
 @media (min-width: 425px) {
@@ -992,6 +1001,12 @@ body {
 }
 
 @media (max-width: 425px) {
+    .background-sum-title {
+        width: 99%;
+    }
+    .background-sum {
+        width: 90%;
+    }
 }
 
 @media (max-width: 475px) {
