@@ -371,7 +371,7 @@ body {
 
 
     /* Darken the background so it's easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #faedcd), url("images/making-bread-4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #faedcd), url("images/bread-13.jpg");
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -862,7 +862,7 @@ body {
     height: 50vh;
     width: 100%;
 
-    background-image: linear-gradient(#faedcd,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #e9edc9), url("images/making-bread-4.jpg");
+    background-image: linear-gradient(#faedcd,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #e9edc9), url("images/bread-9.jpg");
     /* background-image: url("images/bread-8.jpg"); */
 
     /* Position and center image to scale on all screens */
@@ -950,6 +950,27 @@ body {
 @media (max-width: 320px) {
     .background-sum {
         width: 95%;
+    }
+    .services-showcase {
+        overflow-x: hidden;
+        
+    }
+    .showcase-1, .slider-container, .showcase-2 {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .services-listed{
+        padding: 0px 50px;
+    } */
+    .services-sub-title {
+        font-size: 24px;
+    }
+    .services-info-listed {
+        font-size: 14px;
+        width: 100%;
     }
 }
 
