@@ -167,6 +167,12 @@ body {
     .column-3 {
         width: 100%;
     }
+    /* Expand width of text */
+    #founders p, #history p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
     /* Emily - normal column order */
     #founders #emily {
         display: flex;
@@ -187,6 +193,18 @@ body {
 .about #history {
     text-align: center;
     max-width: 75%;
+}
+
+/* Mobile-only images to insert between text sections */
+.about #img-mobile-1 img, .about #img-mobile-2 img {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .about #img-mobile-1 img, .about #img-mobile-2 img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Gallery */
@@ -241,9 +259,15 @@ body {
     #gallery img {
         max-width: 75%;
     }
-    /* Realign to center */
+    /* Hide on mobile */
     #gallery #img-1 {
         text-align: center;
+        display: none;
+    }
+    /* Hide on mobile */
+    #gallery #img-2 {
+        text-align: center;
+        display: none;
     }
     /* Realign to center */
     #gallery #img-3 {
