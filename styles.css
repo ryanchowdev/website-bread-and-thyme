@@ -822,6 +822,14 @@ body {
     position: relative;
 }
 
+.hero-logo {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding-bottom: 25px;
+    border-radius: 100%;
+}
+
 .index-background-sum {
     width: 100%;
     padding-top: 90px;
@@ -1102,6 +1110,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .hero-logo {
+        width: 100%;
     }
 }
 
