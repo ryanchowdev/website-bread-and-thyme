@@ -19,8 +19,6 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 0.5rem;
-    padding-right: 0.5rem; */
 }
 
 
@@ -68,7 +66,6 @@ body {
 
     /* Darken the background so it's easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), #faedcd), url("images/making-bread-1.jpg");
-    /* background-image: url("images/making-bread-1.jpg"); */
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -84,7 +81,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: white; */
 }
 
 /* Enlarge the h1 text */
@@ -278,10 +274,6 @@ body {
 /* Desktop container */
 .desktop-nav-container {
     width: 100%;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* padding-left: 0.5rem;
-    padding-right: 0.5rem; */
 }
 
 .desktop-nav {
@@ -497,10 +489,6 @@ body {
 
 /* Footer For All Pages */
 .desktop-footer-container-main {
-    /* background-color: #fefae0 ;
-    display: flex;
-    flex-direction: row;
-    justify-content: start; */
     margin: 0;
     height: 55vh;
     padding-top: 25px;
@@ -568,11 +556,6 @@ body {
     margin: 0;
 }
 
-/* TODO ? need to fix layout on windows */
-/* .contact-container {
-    width: 100%;
-} */
-
 .contact-container h1 {
     font-size: 50px;
     text-align: center;
@@ -629,7 +612,6 @@ body {
 
     /* Darken the background so it's easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), #faedcd), url("images/bread-1.jpg");
-    /* background-image: url("images/making-bread-1.jpg"); */
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -649,7 +631,7 @@ body {
 
 /* Submit button */
 .contact-container form .contact-btn {
-    width: 100%; /* 50% */
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     margin-top: 18px;
@@ -675,8 +657,6 @@ body {
 
 .contact-button-container{
     width: 100%;
-    /* height: 100vh; */
-    /* background: #e3ebfe; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -687,7 +667,7 @@ body {
     height: 80px;
     border: none;
     outline: none;
-    background: #ccd5ae; /* #2f2f2f; */
+    background: #ccd5ae;
     color: #fff;
     font-size: 22px;
     border-radius: 40px;
@@ -724,7 +704,7 @@ body {
 }
 
 .contact-button-container .active{
-    background: #8fa253; /* #ff2b75; */
+    background: #8fa253;
     transition: 1s;
 }
 
@@ -746,10 +726,6 @@ body {
 }
 
 /* Contact slideshow */
-/* 
-    TODO can remove later if not broken, keep for now 
-    same as services slideshow
-*/
 .contact .slider-wrapper {
     width: 24rem;
     position: relative;
@@ -838,7 +814,6 @@ body {
     width: 100%;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #faedcd), url("images/bread-8.jpg");
-    /* background-image: url("images/bread-8.jpg"); */
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -887,7 +862,6 @@ body {
     width: 100%;
 
     background-image: linear-gradient(#faedcd,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45), #e9edc9), url("images/bread-9.jpg");
-    /* background-image: url("images/bread-8.jpg"); */
 
     /* Position and center image to scale on all screens */
     background-position: center;
@@ -986,9 +960,6 @@ body {
         justify-content: center;
         align-items: center;
     }
-    /* .services-listed{
-        padding: 0px 50px;
-    } */
     .services-sub-title {
         font-size: 24px;
     }
